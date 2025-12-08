@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: pink;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 40px;
+        color: rgb(156, 8, 139);
+      }
+      img {
+        width: clamp(200px, 60vw, 400px);
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+      button {
+        font-size: 25px;
+        padding: 15px 30px;
+        margin: 15px;
+        cursor: pointer;
+        border-radius: 15px;
+        border: none;
+        font-weight: bold;
+      }
+      .btn-yes {
+        background-color: rgb(255, 100, 150);
+      }
+      .btn-no {
+        background-color: rgb(255, 200, 200);
+      }
+      p {
+        font-size: 40px;
+        color: rgb(156, 8, 139);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      tu jyaa da free mat ho mji naa itne pyar se cake laaya hai cut kar chal
+    </h1>
+    <div class="no">
+      <img src="no.gif" alt="" />
+    </div>
+    <div>
+      <p>chal chup chap ab yes par click kar</p>
+    </div>
+    <button class="btn-yes" onclick="goYes()">YES 🍰</button>
+    <button class="btn-no" onclick="goNo()">NO 😭</button>
+
+    <script>
+      function goYes() {
+        window.location.href = "yes.html";
+      }
+      function goNo() {
+        window.location.href = "no.html";
+      }
+    </script>
+  </body>
+</html>

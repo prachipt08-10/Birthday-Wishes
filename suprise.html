@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>suprise</title>
+    <style>
+      body {
+        animation: fadein 1.2s ease;
+        background: linear-gradient(#fa8072, #d9cdd9);
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+      }
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      h1 {
+        font-size: 60px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        margin-bottom: 20px;
+      }
+
+      .box p {
+        font-size: 35px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        padding: 0 10px;
+      }
+
+      .box img {
+        margin-top: 40px;
+        max-width: 90%;
+        height: auto;
+        border: 2px solid black;
+        animation: flower 3s ease-in-out infinite;
+        cursor: pointer;
+      }
+
+      @keyframes flower {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.15);
+        }
+      }
+
+      #flowerExtra {
+        display: none;
+        margin-top: 20px;
+        max-width: 90%;
+        height: auto;
+        animation: reveal 2s ease forwards;
+      }
+
+      @keyframes reveal {
+        0% {
+          opacity: 0;
+          transform: scale(0.5);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 40px;
+        }
+        .box p {
+          font-size: 25px;
+        }
+        .box img {
+          margin-top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>And Here we go!!!</h1>
+    <div class="box">
+      <p>chalo cutiee ab ye flowers lelo jaldi jaldi click karo unpar</p>
+      <img src="img1.jpg" id="flower" height="400px" alt="" />
+      <a href="flower.html"></a>
+      <img src="flower.png" id="flowerExtra" />
+    </div>
+
+    <script>
+      document.getElementById("flower").addEventListener("click", function () {
+        window.location.href = "flower.html";
+      });
+    </script>
+  </body>
+</html>

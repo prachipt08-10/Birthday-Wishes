@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: pink;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 40px;
+        color: rgb(156, 8, 139);
+      }
+
+      #buttonBox {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      button {
+        font-size: 25px;
+        padding: 15px 30px;
+        margin: 15px;
+        cursor: pointer;
+        border-radius: 15px;
+        border: none;
+        font-weight: bold;
+        font-weight: bold;
+        transition: transform 0.3s ease;
+      }
+
+      .btn-yes {
+        background-color: rgb(255, 100, 150);
+      }
+
+      .btn-no {
+        background-color: rgb(255, 200, 200);
+      }
+      @media (max-width: 480px) {
+        button {
+          width: 70%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>chal ab cake kaat lete haii!!!</h1>
+
+    <div id="buttonBox">
+      <button class="btn-yes" onclick="goYes()">YES 🍰</button>
+      <button class="btn-no" onclick="goNo()">NO 😭</button>
+    </div>
+
+    <script>
+      function goYes() {
+        window.location.href = "yes.html";
+      }
+
+      function goNo() {
+        window.location.href = "no.html";
+      }
+    </script>
+  </body>
+</html>

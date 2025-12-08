@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        overflow-x: hidden;
+        text-align: center;
+        background: linear-gradient(#d382d3, #f7c6f7);
+        padding: 20px;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        margin-top: 20px;
+        font-size: clamp(35px, 8vw, 70px);
+        font-weight: bold;
+        color: #ffffff;
+        animation: title 2s ease infinite;
+      }
+
+      @keyframes title {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      .card {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+      }
+
+      #container,
+      #container2,
+      #container3 {
+        width: clamp(250px, 80vw, 350px);
+        min-height: 420px;
+        background: white;
+        border-radius: 12px;
+        border: 2px solid black;
+        padding: 15px;
+        font-size: clamp(20px, 4.5vw, 32px);
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .sticker {
+        width: clamp(150px, 55vw, 250px);
+        animation: sticker 3s ease-in-out infinite;
+        margin: auto;
+      }
+
+      @keyframes sticker {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      #btn-container {
+        margin-top: 40px;
+      }
+
+      #btn-container button {
+        font-size: clamp(20px, 5vw, 40px);
+        padding: 15px 35px;
+        cursor: pointer;
+        border-radius: 12px;
+        border: 2px solid black;
+        font-weight: bold;
+        transition: 0.3s ease;
+        background-color: rgba(224, 218, 222, 0.943);
+        box-shadow: 0 0 15px rgb(143, 19, 128);
+      }
+
+      #btn-container button:hover {
+        transform: scale(1.1);
+        background-color: #ff69b4;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hey Bokdeee !!</h1>
+
+    <div class="card">
+      <div id="container">
+        chingum bhava apla ha frdship bond asach rahudeee
+        <br />
+        <img src="dost2.jpg" class="sticker" width="250px" />
+      </div>
+      <div id="container2">
+        mala show nahi karta caring vegera pn bhai hai tu mera chinta to teri
+        hai muje lekin tu mera khyaal rakhti hai ree
+        <br />
+        <img src="dost1.jpg" class="sticker" width="220px" alt="bear" />
+      </div>
+      <div id="container3">
+        khusi mai to sabhi khate hai punjabi chinese cheese tost jo gum mai sath
+        de vahi hota hai asli dost
+        <br />
+        <img src="dost.jpg" class="sticker" width="250px" alt="" />
+      </div>
+    </div>
+
+    <div id="btn-container">
+      <a href="suprise.html">
+        <button onclick="show()">chal aata click kar ithe</button>
+      </a>
+    </div>
+
+    <script>
+      function show() {
+        alert("Get ready for your supriseeee! 💖✨");
+        window.location.href = "suprise.html";
+      }
+    </script>
+  </body>
+</html>
